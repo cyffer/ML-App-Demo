@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Texas</title>
+<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                <li><a href="california.html">California</a></li>
+                <li><a href="florida.html">Florida</a></li>
+                <li><a href="newyork.html">New York</a></li>
+                <li><a href="texas.html">Texas</a></li>
+                <li><a href="ml.html">Machine Learning</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<body>
+    <div id="container" style='padding-left: 50px; background-color: #f5fafa; '>
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Machine Learning</h1>
+                <br>
+                <p><strong>Harnessing the unemployment data from the U.S. Bureau of Labor Statistics (BLS), real estate data for single family home prices on zillow.com, the project used power of Machine Learning algorithms in order to understand the nexus between the labor and real state markets and also understand the impact of a global pandemic.</strong></p>
+                <br>
+                <p>
+                    The ETL (extraction, transformation, and loading) framework that were applied in this project used multivariate linear regression algorithms.
+                </p>
+                 <p>
+                    This ML was a guided learning process that utilized 10 years of labor and real state data gathered from BLS and Zillow.com. The cleaning process included aggregating and computing more than 36 thousands rows and 250 columns in order to right size the multiple observations.
+                </p>
+                    Although we had access to dataset that cover all 50 states soon we found out in our research that by applying linear regression nation wide the data was not only erratic and but also below 50% at 44.0% which render it unusable.
+                </p>
+                <p>
+                    Facing this challenge a decision was made by the group to focus in four markets California, Florida, Texas and New York. This pivot yielded better by using the sklearn regression model for example in California we found that the ML provided 88.9% accuracy on the training score and  91.44 on the testing score. This model was reproduceble across the board yielding similar results in the range of 89% and 91% for Florida, New York, and Texas.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>California</h2>
+                <img src="https://corona-2020-bucket.s3.us-east-2.amazonaws.com/ca-ml-chart.JPG" >
+            </div>
+            <div>
+                <h2>Florida</h2>
+                <img src="https://corona-2020-bucket.s3.us-east-2.amazonaws.com/fl-ml-chart.JPG" >
+            </div>
+        </div>
+        <div>
+            <p><strong></strong></p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>New York</h2>
+                <img src="https://corona-2020-bucket.s3.us-east-2.amazonaws.com/ny-ml-chart.JPG" >
+            </div>
+            <div>
+                <h2>Texas</h2>
+                <img src="https://corona-2020-bucket.s3.us-east-2.amazonaws.com/tx-ml-chart.JPG" >
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
